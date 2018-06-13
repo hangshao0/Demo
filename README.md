@@ -1,2 +1,2 @@
 # Demo
-Downloadable source for demos
+Downloadable source for OpenJ9 shared classes demo
