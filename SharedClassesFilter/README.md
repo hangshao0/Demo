@@ -46,8 +46,8 @@ NOTES:
 A. I use option "nobootclasspath" becasue I do not want to see hundreds of bootstrap classes in the output of 
    "-Xshareclasses:name=Cache1,printStats=romclass"
 
-B. org.openj9.test.ivj.Disk will be loaded by application class loader which needs to kown the classes to be 
-   filtered out at its initialization. So the filter class, org.openj9.test.StoreFilter, in the example needs 
+B. Class org.openj9.test.ivj.Disk will be loaded by application class loader which needs to know the classes to be 
+   filtered out at its initialization. So the filter class, org.openj9.test.StoreFilter in the example, needs 
    to be loaded by a different classloader. I use option "-Xbootclasspath/a:./filter", so that it is loaded by
-   the bootstrap class loader. 
+   the bootstrap classloader. 
 
